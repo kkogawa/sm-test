@@ -18,13 +18,13 @@
   }
 
   // Global namespace
-  window.ApexChartsFragment = window.ApexChartsFragment || {};
+  window.ApexChartsFragment2 = window.ApexChartsFragment2 || {};
 
   /**
    * mount(container, props)
    * props.chartOptions
    */
-  window.ApexChartsFragment.mount = async function (container, props = {}) {
+  window.ApexChartsFragment2.mount = async function (container, props = {}) {
     if (!container) return;
 
     // Load ApexCharts if needed
