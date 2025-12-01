@@ -22,7 +22,7 @@
 
   /**
    * mount(container, props)
-   * props.chartOptions でオプション上書き可
+   * props.chartOptions
    */
   window.ApexChartsFragment.mount = async function (container, props = {}) {
     if (!container) return;
