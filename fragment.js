@@ -1,4 +1,4 @@
-window.mount = (el, props) => {
+window.mountSmTest = (el, props) => {
   const now = new Date().toLocaleString();
 
   el.innerHTML = `
