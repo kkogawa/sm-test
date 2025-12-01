@@ -17,13 +17,13 @@
   }
 
   // Global namespace
-  window.ChartJsFragment = window.ChartJsFragment || {};
+  window.DonutChartJsFragment = window.DonutChartJsFragment || {};
 
   /**
    * mount(container, props)
    * props.chartOptions
    */
-  window.ChartJsFragment.mount = async function (container, props = {}) {
+  window.DonutChartJsFragment.mount = async function (container, props = {}) {
     if (!container) return;
 
     await loadChartJs();
