@@ -75,8 +75,12 @@
     const chart = new window.ApexCharts(container, finalOptions);
     await chart.render();
 
+    const handleResize = () => chart.updateOptions({}, false, false);
+    window.addEventListener('resize', handleResize);
+    
     // Cleanup
     return () => {
+      window.removeEventListener('resize', handleResize);
       chart.destroy();
       container.innerHTML = "";
     };
